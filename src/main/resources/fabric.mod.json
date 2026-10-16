@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "ultimatearmortoolsmod",
+  "version": "1.0.0",
+  "name": "Ultimate Armor Tools Mod",
+  "description": "最強の防具一式と最強のツール 最強の剣を作って",
+  "authors": ["tokitikaegg"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "com.tokitikaegg.ultimatearmortoolsmod.UltimateArmorToolsMod"
+    ]
+  },
+  "mixins": [],
+  "depends": {
+    "fabricloader": ">=0.16.5",
+    "fabric-api": "*",
+    "minecraft": "1.21.4"
+  }
+}

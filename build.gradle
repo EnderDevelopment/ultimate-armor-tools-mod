@@ -1,0 +1,29 @@
+plugins {
+    id 'fabric-loom' version '1.7-SNAPSHOT'
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        name = 'Fabric'
+        url = 'https://maven.fabricmc.net/'
+    }
+}
+
+extra {
+    apply plugin: 'fabric-loom'
+    minecraftVersion = '1.21.4'
+    mappingsVersion = '1.21.4+build.1'
+    loaderVersion = '0.16.5'
+    modId = 'ultimatearmortoolsmod'
+    modVersion = '1.0.0'
+    archiveBaseName = 'ultimatearmortoolsmod'
+    modJavaVersion = JavaVersion.VERSION_17
+}
+
+dependencies {
+    minecraft 'com.mojang:minecraft:1.21.4'
+    mappings 'net.fabricmc:yarn:1.21.4+build.1:v2'
+    modImplementation 'net.fabricmc:fabric-loader:0.16.5'
+    modImplementation 'net.fabricmc.fabric-api:fabric-api:0.102.0+1.21.4'
+}
